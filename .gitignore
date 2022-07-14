@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# 忽略rollup打包生成的分析页面
+stats.html

@@ -12,10 +12,17 @@
   },
   "devDependencies": {
     "@types/node": "^18.0.4",
+    "@unocss/preset-attributify": "^0.44.2",
+    "@unocss/preset-icons": "^0.44.2",
+    "@unocss/preset-uno": "^0.44.2",
     "@vitejs/plugin-vue": "^2.3.3",
+    "rollup-plugin-visualizer": "^5.7.0",
     "sass": "^1.53.0",
     "typescript": "^4.5.4",
+    "unocss": "^0.44.2",
     "vite": "^2.9.9",
+    "vite-plugin-html": "2",
+    "vite-plugin-vue-setup-extend": "^0.4.0",
     "vue-tsc": "^0.34.7"
   }
 }

@@ -1,26 +1,24 @@
-<script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from "./components/HelloWorld.vue";
-const test = import.meta.env.PROD;
-console.log(test);
-console.log("dev", import.meta.env.DEV);
-console.log("env", import.meta.env);
-</script>
-
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
-</template>
+  <div p-24>
+    <p>
+      文档：<a
+        hover-decoration-underline
+        c-blue
+        href="https://uno.antfu.me/"
+        target="_blank"
+        >https://uno.antfu.me/</a
+      >
+    </p>
+  </div>
+  <div flex mt-20>
+    <div flex p-20 rounded-5 bg-white>
+      <div text-20 font-600>Flex布局</div>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-  background-color: $primaryColor;
-}
-</style>
+      <div flex w-360 flex-wrap justify-around ml-15 p-10>
+        <div w-50 h-50 b-1 rounded-5 flex justify-center items-center p-10 m-20>
+          <span w-6 h-6 rounded-3 bg-black></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
