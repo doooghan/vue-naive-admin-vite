@@ -1,5 +1,11 @@
 export const basicRoutes = [
   {
+    name: '404',
+    path: '/404',
+    component: () => import('@/views/error-page/404.vue'),
+    isHidden: true,
+  },
+  {
     name: 'LOGIN',
     path: '/login',
     component: () => import('@/views/login/index.vue'),
@@ -24,3 +30,18 @@ export const basicRoutes = [
     },
   },
 ];
+
+export const NOT_FOUND_ROUTE = {
+  name: 'NotFound',
+  path: '/:pathMatch(.*)*',
+  redirect: '/404',
+  isHidden: true,
+};
+// modules文件夹下的路由都会作为动态路由
+const modules = import.meta.globEager('./modules/*.ts');
+const asyncRoutes = [];
+Object.keys(modules).forEach((key) => {
+  asyncRoutes.push(...modules[key].default);
+});
+
+export { asyncRoutes };
