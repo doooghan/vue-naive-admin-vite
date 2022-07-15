@@ -1,13 +1,8 @@
 <template>
   <div p-24>
     <p>
-      文档：<a
-        hover-decoration-underline
-        c-blue
-        href="https://uno.antfu.me/"
-        target="_blank"
-        >https://uno.antfu.me/</a
-      >
+      文档：
+      <a hover-decoration-underline c-blue href="https://uno.antfu.me/" target="_blank">https://uno.antfu.me/</a>
     </p>
   </div>
   <div flex mt-20>
